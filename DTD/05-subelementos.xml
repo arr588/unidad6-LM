@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ciudad>
+<!DOCTYPE ciudad SYSTEM "05-subelementos.dtd">
+    <nombre>Roma</nombre>
+    <nombre>Italia</nombre>
+</ciudad>
