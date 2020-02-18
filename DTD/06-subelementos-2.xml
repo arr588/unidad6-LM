@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE persona [
+    <!ELEMENT persona ANY>
     <!ELEMENT nombre (#PCDATA)>
     <!ELEMENT apellidos (#PCDATA)>
     <!ELEMENT mayor_de_edad EMPTY>
@@ -10,7 +11,7 @@
 ]>
 <persona>
     <nombre>texto</nombre>
-    <apellidos>texto</nombre>
+    <apellidos>texto</apellidos>
     <mayor_de_edad/>
     <fecha_nacimiento>
         <dia>texto</dia>
