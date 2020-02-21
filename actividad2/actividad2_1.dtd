@@ -1,0 +1,4 @@
+<!ELEMENT discos (disco)>
+<!ELEMENT disco (artista*, album)>
+<!ELEMENT artista (#PCDATA)>
+<!ELEMENT album (#PCDATA)>
