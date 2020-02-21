@@ -1,0 +1,14 @@
+<!ELEMENT automovil (datos, especificaciones)>
+<!ELEMENT datos (marca, modelo, anyo)>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT modelo (#PCDATA)>
+<!ELEMENT anyo (#PCDATA)>
+<!ELEMENT especificaciones (longitud, traccion-delantera*, traccion-trasera*, traccion-4x4*, motor)>
+<!ELEMENT longitud (#PCDATA)>
+<!ELEMENT traccion-delantera (#PCDATA)>
+<!ELEMENT traccion-trasera (#PCDATA)>
+<!ELEMENT traccion-4x4 (#PCDATA)>
+<!ELEMENT motor (cilindros, cc, cv)>
+<!ELEMENT cilindros (#PCDATA)>
+<!ELEMENT cc (#PCDATA)>
+<!ELEMENT cv (#PCDATA)>
