@@ -1,4 +1,4 @@
-<!ELEMENT etiqueta (nombre, calle, ciudad, pais, codigo, matriculado*, no_matriculado*)>
+<!ELEMENT etiqueta (nombre, calle, ciudad, pais, codigo, (matriculado | no_matriculado))>
 <!ELEMENT nombre (#PCDATA)>
 <!ELEMENT calle (#PCDATA)>
 <!ELEMENT ciudad (#PCDATA)>
