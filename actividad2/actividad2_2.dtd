@@ -1,0 +1,6 @@
+<!ELEMENT filmoteca (pelicula*)>
+<!ELEMENT pelicula (titulo, anyo, actores)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT anyo (#PCDATA)>
+<!ELEMENT actores (actor*)>
+<!ELEMENT actor (#PCDATA)>
