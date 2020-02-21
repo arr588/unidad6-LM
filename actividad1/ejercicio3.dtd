@@ -3,11 +3,11 @@
 <!ELEMENT marca (#PCDATA)>
 <!ELEMENT modelo (#PCDATA)>
 <!ELEMENT anyo (#PCDATA)>
-<!ELEMENT especificaciones (longitud, traccion-delantera*, traccion-trasera*, traccion-4x4*, motor)>
+<!ELEMENT especificaciones (longitud, (traccion-delantera | traccion-trasera | traccion-4x4), motor)>
 <!ELEMENT longitud (#PCDATA)>
-<!ELEMENT traccion-delantera (#PCDATA)>
-<!ELEMENT traccion-trasera (#PCDATA)>
-<!ELEMENT traccion-4x4 (#PCDATA)>
+<!ELEMENT traccion-delantera EMPTY>
+<!ELEMENT traccion-trasera EMPTY>
+<!ELEMENT traccion-4x4 EMPTY>
 <!ELEMENT motor (cilindros, cc, cv)>
 <!ELEMENT cilindros (#PCDATA)>
 <!ELEMENT cc (#PCDATA)>
