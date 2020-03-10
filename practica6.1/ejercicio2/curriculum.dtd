@@ -1,0 +1,10 @@
+<!ELEMENT curriculum (datos_personales, datos_contacto, formacion, idiomas, experiencia, datos_adicionales)>
+<!ELEMENT datos_personales (nombre, apellidos, fecha_nac, lugar_nac, nacionalidad+, identificacion)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT fecha_nac (#PCDATA)>
+<!ELEMENT lugar_nac (#PCDATA)>
+<!ELEMENT nacionalidad (#PCDATA)>
+<!ELEMENT identificacion (#PCDATA)>
+<!ATTLIST identificacion tipo (nif | nie) "nie">
+<!ELEMENT datos_contacto (tipo_via)>

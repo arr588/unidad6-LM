@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html-celia SYSTEM "curriculum.dtd">
+<curriculum>
+    <datos_personales>
+        <nombre></nombre>
+        <apellidos></apellidos>
+        <fecha_nac></fecha_nac>
+        <lugar_nac></lugar_nac>
+        <nacionalidad></nacionalidad>
+        <identificacion tipo = 'nie'></identificacion>
+    </datos_personales>
+    <datos_contacto>
+        <tipo_via></tipo_via>
+        <nombre_via></nombre_via>
+        <numero></numero>
+        <portal></portal>
+        <email></email>
+        <telf_fijo></telf_fijo>
+        <telf_movil></telf_movil>
+    </datos_contacto>
+    <formacion enCurso = ''>
+        <titulo></titulo>
+        <lugar_estudio></lugar_estudio>
+        <fecha_inicio></fecha_inicio>
+        <fecha_fin></fecha_fin>
+    </formacion>
+    <idiomas materno = ''>
+        <nombre></nombre>
+        <nivel></nivel>
+    </idiomas>
+    <experiencia>
+        <lugar_trabajo></lugar_trabajo>
+        <puesto></puesto>
+        <empresa></empresa>
+        <fecha_inicio></fecha_inicio>
+        <fecha_fin></fecha_fin>
+    </experiencia>
+    <datos_adicionales>
+        <p></p>
+        <em></em>
+        <strong></strong>
+    </datos_adicionales>
+</curriculum>
