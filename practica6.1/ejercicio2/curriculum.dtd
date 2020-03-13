@@ -1,4 +1,4 @@
-<!ELEMENT curriculum (datos_personales, datos_contacto, formacion, idiomas, experiencia, datos_adicionales)>
+<!ELEMENT curriculum (datos_personales, datos_contacto, formacion+, idiomas+, experiencia, datos_adicionales)>
 <!ELEMENT datos_personales (nombre, apellidos, fecha_nac, lugar_nac, nacionalidad+, identificacion)>
 <!ELEMENT nombre (#PCDATA)>
 <!ELEMENT apellidos (#PCDATA)>
@@ -7,4 +7,30 @@
 <!ELEMENT nacionalidad (#PCDATA)>
 <!ELEMENT identificacion (#PCDATA)>
 <!ATTLIST identificacion tipo (nif | nie) "nie">
-<!ELEMENT datos_contacto (tipo_via)>
+<!ELEMENT datos_contacto (tipo_via, nombre_via, numero*, portal*, email, telf_fijo*, telf_movil)>
+<!ELEMENT tipo_via EMPTY>
+<!ATTLIST tipo_via tipo (calle | avenida) "calle">
+<!ELEMENT nombre_via (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT portal (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT telf_fijo (#PCDATA)>
+<!ELEMENT telf_movil (#PCDATA)>
+<!ELEMENT formacion (titulo, lugar_estudio, fecha_inicio*, fecha_fin*)>
+<!ATTLIST formacion enCurso (true | false) #REQUIRED>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT lugar_estudio (#PCDATA)>
+<!ELEMENT fecha_inicio (#PCDATA)>
+<!ELEMENT fecha_fin (#PCDATA)>
+<!ELEMENT idiomas (idioma, nivel)>
+<!ATTLIST idiomas materno (si | no) "no">
+<!ELEMENT idioma EMPTY>
+<!ATTLIST idioma nombre (español | ingles | frances | aleman | italiano) #REQUIRED>
+<!ELEMENT nivel (#PCDATA)>
+<!ELEMENT experiencia (lugar_trabajo, puesto*, empresa, fecha_inicio, fecha_fin)>
+<!ELEMENT lugar_trabajo (#PCDATA)>
+<!ELEMENT puesto (#PCDATA)>
+<!ELEMENT empresa (#PCDATA)>
+<!ELEMENT datos_adicionales (#PCDATA | em | strong)*>
+<!ELEMENT em (#PCDATA)>
+<!ELEMENT strong (#PCDATA)>

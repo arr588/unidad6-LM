@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html-celia SYSTEM "curriculum.dtd">
+<!DOCTYPE curriculum SYSTEM "curriculum.dtd">
 <curriculum>
     <datos_personales>
         <nombre></nombre>
@@ -10,7 +10,7 @@
         <identificacion tipo = 'nie'></identificacion>
     </datos_personales>
     <datos_contacto>
-        <tipo_via></tipo_via>
+        <tipo_via tipo = 'calle'/>
         <nombre_via></nombre_via>
         <numero></numero>
         <portal></portal>
@@ -18,14 +18,14 @@
         <telf_fijo></telf_fijo>
         <telf_movil></telf_movil>
     </datos_contacto>
-    <formacion enCurso = ''>
+    <formacion enCurso = 'true'>
         <titulo></titulo>
         <lugar_estudio></lugar_estudio>
         <fecha_inicio></fecha_inicio>
         <fecha_fin></fecha_fin>
     </formacion>
-    <idiomas materno = ''>
-        <nombre></nombre>
+    <idiomas materno = 'no'>
+        <idioma nombre = 'español'/>
         <nivel></nivel>
     </idiomas>
     <experiencia>
@@ -36,7 +36,6 @@
         <fecha_fin></fecha_fin>
     </experiencia>
     <datos_adicionales>
-        <p></p>
         <em></em>
         <strong></strong>
     </datos_adicionales>
