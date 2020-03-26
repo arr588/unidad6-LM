@@ -1,0 +1,41 @@
+<!ENTITY % atributos-generales "
+    id ID #IMPLIED
+    clase CDATA #IMPLIED
+    estilo CDATA #IMPLIED
+    titulo CDATA #IMPLIED">
+<!ENTITY % atributos-cuerpo "
+    idioma (es | en | de | po | fr | cn) 'es'
+    dir (iad | dai) 'iad'">
+<!ELEMENT html-celia (cabecera, cuerpo)>
+<!ATTLIST html-celia %atributos-generales;>
+<!ELEMENT cabecera (titulo, metadato*)>
+<!ATTLIST cabecera %atributos-generales;>
+<!ELEMENT titulo (#PCDATA)>
+<!ATTLIST titulo %atributos-generales;>
+<!ELEMENT metadato EMPTY>
+<!ATTLIST metadato %atributos-generales;>
+<!ATTLIST metadato nombre CDATA #REQUIRED>
+<!ATTLIST metadato contenido CDATA #REQUIRED>
+<!ELEMENT cuerpo (#PCDATA| parrafo | negrita | cursiva | nl | imagen | enlace)*>
+<!ATTLIST cuerpo %atributos-generales;>
+<!ELEMENT parrafo ANY>
+<!ATTLIST parrafo %atributos-generales;>
+<!ATTLIST parrafo %atributos-cuerpo;>
+<!ELEMENT negrita (#PCDATA)>
+<!ATTLIST negrita %atributos-generales;>
+<!ATTLIST negrita %atributos-cuerpo;>
+<!ELEMENT nl EMPTY>
+<!ATTLIST nl %atributos-generales;>
+<!ATTLIST nl %atributos-cuerpo;>
+<!ELEMENT imagen EMPTY>
+<!ATTLIST imagen %atributos-generales;>
+<!ATTLIST imagen %atributos-cuerpo;>
+<!ATTLIST imagen ruta CDATA #REQUIRED>
+<!ATTLIST imagen alt CDATA #REQUIRED>
+<!ATTLIST imagen ancho CDATA #IMPLIED>
+<!ATTLIST imagen alto CDATA #IMPLIED>
+<!ELEMENT enlace (#PCDATA)>
+<!ATTLIST enlace %atributos-generales;>
+<!ATTLIST enlace %atributos-cuerpo;>
+<!ATTLIST enlace destino CDATA #REQUIRED>
+<!ATTLIST enlace target CDATA #IMPLIED>

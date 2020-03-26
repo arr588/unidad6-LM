@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mensajes [
+    <!ELEMENT mensajes (de, para, asunto, mensaje)>
+    <!ELEMENT de (#PCDATA)>
+    <!ELEMENT para (#PCDATA)>
+    <!ELEMENT asunto (#PCDATA)>
+    <!ELEMENT mensaje (#PCDATA)>
+]>
+<mensajes>
+    <de>remitente</de>
+    <para>receptor</para>
+    <asunto>tema</asunto>
+    <mensaje>cuerpo</mensaje>
+</mensajes>

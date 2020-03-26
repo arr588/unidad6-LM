@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE articulo [
+    <!ELEMENT articulo (codigo | id)>
+    <!ELEMENT codigo (#PCDATA)>
+    <!ELEMENT id (#PCDATA)>
+]>
+<!-- Un artículo puede tener un código o un id pero no ambos -->
+<articulo>
+    <codigo>AF-33</codigo>
+</articulo>

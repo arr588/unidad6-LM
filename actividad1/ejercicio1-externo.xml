@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mensajes SYSTEM "ejercicio1.dtd">
+<mensajes>
+    <de>remitente</de>
+    <para>receptor</para>
+    <asunto>tema</asunto>
+    <mensaje>cuerpo</mensaje>
+</mensajes>

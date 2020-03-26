@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE discos SYSTEM "actividad2_1.dtd">
+<discos>
+    <disco>
+        <artista>Guns n'Roses</artista>
+        <album>Appetite for Destruction</album>
+    </disco>
+</discos>
