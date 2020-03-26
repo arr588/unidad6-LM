@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<minerales xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ejercicio5.xsd">
+    <mineral>
+        <nombre>Kriptonita</nombre>
+        <propiedades>
+            <propiedad>Daña a superman</propiedad>
+            <propiedad>Es verde</propiedad>
+            <propiedad>Es radioactivo</propiedad>
+        </propiedades>
+    </mineral>
+    <mineral>
+        <nombre>Adamantio</nombre>
+        <propiedades>
+            <propiedad>Aleación de metales</propiedad>
+            <propiedad>Gran resistencia</propiedad>
+        </propiedades>
+    </mineral>
+    <mineral>
+        <nombre>Mithril</nombre>
+        <propiedades>
+            <propiedad>Aspecto similar a la plata</propiedad>
+            <propiedad>Gran resistencia</propiedad>
+            <propiedad>Sólo en minas de Moria</propiedad>
+        </propiedades>
+    </mineral>
+        <mineral>
+        <nombre>Carbonita</nombre>
+        <propiedades>
+            <propiedad>Mezcla de carbón y gas Tibanna</propiedad>
+            <propiedad>Uso en criogénesis</propiedad>
+        </propiedades>
+    </mineral>
+</minerales>

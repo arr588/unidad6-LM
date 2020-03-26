@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mensaje xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="ejercicio1.xsd">
+    <de>Alejandro Romero Rodríguez</de>
+    <para>Jose Sánchez Moreno</para>
+    <asunto>Prueba</asunto>
+    <contenido>
+        Prueba de mensaje para el xml.
+    </contenido>
+</mensaje>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="automovil">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="datos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="marca" type="xs:string"/>
+                            <xs:element name="modelo" type="xs:string"/>
+                            <xs:element name="anyo" type="xs:positiveInteger"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="especificaciones">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="longitud" type="xs:float"/>
+                            <xs:element name="traccion-delantera">
+                                <xs:complexType></xs:complexType>
+                            </xs:element>
+                            <xs:element name="motor">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="cilindros" type="xs:positiveInteger"/>
+                                        <xs:element name="cc" type="xs:positiveInteger"/>
+                                        <xs:element name="cv" type="xs:positiveInteger"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

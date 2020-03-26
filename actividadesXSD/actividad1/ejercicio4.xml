@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filmoteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ejercicio4.xsd">
+    <pelicula>
+        <titulo>Coherence</titulo>
+        <anyo>2013</anyo>
+        <actores>
+            <actor>Emily Baldoni</actor>
+            <actor>Maury Sterling</actor>
+        </actores>
+    </pelicula>
+    <pelicula>
+        <titulo>Un día más con vida</titulo>
+        <anyo>2018</anyo>
+        <actores/>
+    </pelicula>
+</filmoteca>
