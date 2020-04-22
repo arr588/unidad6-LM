@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<vehiculos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ejercicio2.xsd">
+  <vehiculo>
+    <id>veh-1</id>
+    <nombre>Count Zero</nombre>
+    <modelo>Series I</modelo>
+    <version>2</version>
+    <fabricacion>
+      <inicio>1949-07-21</inicio>
+      <fin>1949-08-09</fin>
+    </fabricacion>
+    <modificaciones>
+      <modificacion>Change Engine</modificacion>
+      <modificacion>Change pedals</modificacion>
+      <modificacion>Change gearbox</modificacion>
+      <modificacion>Fit Rollcage</modificacion>
+    </modificaciones>
+  </vehiculo>
+</vehiculos>
