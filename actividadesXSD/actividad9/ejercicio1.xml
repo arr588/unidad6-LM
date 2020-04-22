@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paises xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ejercicio1.xsd">
+    <pais>
+        <nombre>Albania</nombre>
+        <capital>Tirana</capital>
+        <poblacion>3038594</poblacion>
+        <pib>38356</pib>
+        <continente>EU</continente>
+    </pais>
+    <pais>
+        <nombre>Hungría</nombre>
+        <capital>Budapest</capital>
+        <poblacion>9797561</poblacion>
+        <pib>155703</pib>
+        <continente>EU</continente>
+    </pais>
+</paises>

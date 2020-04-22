@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- Datos -->
+    <xs:simpleType name="tipo-nombre">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="50"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipo-poblacion">
+        <xs:restriction base="xs:positiveInteger"/> <!-- Tenemos en cuenta poblaciones de 0 habitantes -->
+    </xs:simpleType>
+
+    <xs:simpleType name="tipo-pib">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:maxInclusive value="999999"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipo-continente">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="AF"/>
+            <xs:enumeration value="AS"/>
+            <xs:enumeration value="EU"/>
+            <xs:enumeration value="NA"/>
+            <xs:enumeration value="SA"/>
+            <xs:enumeration value="OC"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- XSD -->
+    <xs:element name="paises">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="pais" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="tipo-nombre"/>
+                            <xs:element name="capital" type="xs:string"/>
+                            <xs:element name="poblacion" type="tipo-poblacion"/>
+                            <xs:element name="pib" type="tipo-pib"/>
+                            <xs:element name="continente" type="tipo-continente"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
