@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- Datos -->
+    <xs:simpleType name="tipo-marca">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Intel"/>
+            <xs:enumeration value=" AMD"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipo-modelo">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="50"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipo-socket">
+        <xs:restriction base="xs:string"> <!-- En el pdf de la actividad pone los valores 3 mínimo y 5 máximo, pero el máximo no coincide con el xml. Le he puesto el valor del xml -->
+            <xs:minLength value="3"/>
+            <xs:maxLength value="8"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipo-nuc-hil">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:maxInclusive value="64"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- XSD -->
+    <xs:element name="procesador">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="marca" type="tipo-marca"/>
+                <xs:element name="modelo" type="tipo-modelo"/>
+                <xs:element name="socket" type="tipo-socket"/>
+                <xs:element name="nucleos" type="tipo-nuc-hil"/>
+                <xs:element name="hilos" type="tipo-nuc-hil"/>
+                <xs:element name="en-venta" type="xs:boolean"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

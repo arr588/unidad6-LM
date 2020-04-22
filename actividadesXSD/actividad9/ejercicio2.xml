@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<procesador xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ejercicio2.xsd">
+    <marca>Intel</marca>
+    <modelo>Core i5-9600K</modelo>
+    <socket>LGA 1151</socket>
+    <nucleos>6</nucleos>
+    <hilos>6</hilos>
+    <en-venta>true</en-venta>
+</procesador>
