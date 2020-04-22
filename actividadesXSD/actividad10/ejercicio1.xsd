@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- Datos -->
+    <xs:simpleType name="tipo-dni">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{8}[A-Z]"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipo-nombre">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="150"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipo-numero">
+        <xs:restriction base="xs:nonNegativeInteger">
+            <xs:maxInclusive value="500"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipo-provincia">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Málaga"/>
+            <xs:enumeration value="Almería"/>
+            <xs:enumeration value="Granada"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- XSD -->
+    <xs:element name="alumno">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="dni" type="tipo-dni"/>
+                <xs:element name="nombre" type="tipo-nombre"/>
+                <xs:element name="direccion">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="calle" type="xs:string"/>
+                            <xs:element name="numero" type="tipo-numero"/>
+                            <xs:element name="ciudad" type="xs:string"/>
+                            <xs:element name="provincia" type="tipo-provincia"/>
+                            <xs:element name="cp" type="xs:positiveInteger"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="telefonos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:choice minOccurs="1" maxOccurs="unbounded"> <!-- Pongo unbounded ya que una persona puede tener más de un teléfono fijo o movil -->
+                                <xs:element name="fijo" type="xs:positiveInteger"/>
+                                <xs:element name="movil" type="xs:positiveInteger"/>
+                            </xs:choice>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

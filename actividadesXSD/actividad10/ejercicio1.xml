@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alumno 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:noNamespaceSchemaLocation="ejercicio1.xsd">
+  <dni>12345678A</dni>  
+  <nombre>Juan Garcia</nombre>
+  <direccion>
+    <calle>Calle de la Fuente</calle>
+    <numero>6</numero>
+    <ciudad>Alhaurín de la Torre</ciudad>
+    <provincia>Málaga</provincia>
+    <cp>29130</cp>
+  </direccion>
+  <telefonos>
+   <fijo>924658545</fijo>
+   <movil>659721133</movil>
+  </telefonos>
+</alumno>
