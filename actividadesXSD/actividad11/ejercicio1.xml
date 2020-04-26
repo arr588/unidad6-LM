@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<patrones xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="ejercicio1.xsd">
+    <apartadoA>898_767_123</apartadoA>
+    <apartadoB>898.767.123</apartadoB>
+    <apartadoC>Miller, Josephus</apartadoC>
+    <apartadoD>dabGHI</apartadoD>
+    <apartadoE>hola2a9998</apartadoE>
+    <apartadoF>T4RsYs8</apartadoF>
+    <apartadoG>978-3-16-148410-0</apartadoG>
+    <apartadoH>A101</apartadoH>
+    <apartadoI>USS-Virginia</apartadoI>
+    <apartadoI>PCU-Alaska</apartadoI>
+    <apartadoJ>P1234AP#</apartadoJ>
+    <apartadoJ>E4321BB</apartadoJ>
+    <apartadoK>ual.es</apartadoK>
+    <apartadoK>www.ual.es/index.html</apartadoK>
+    <apartadoK>www.iescelia.org/aulavirtual</apartadoK>
+</patrones>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="apartadoA">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{3}_\d{3}_\d{3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="apartadoB">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{3}.\d{3}.\d{3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="apartadoC">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]{1}[a-z]{0,},\s[A-Z]{1}[a-z]{0,}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="apartadoD">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-f]{3}[G-M]{3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="apartadoE">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-z]{4}[0-2]a\d{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="apartadoF">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Za-z\d]{6,}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="apartadoG">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[1-9]\d{2}-\d-\d{2}-\d{6}-\d"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="apartadoH">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(A|C)\d{3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="apartadoI">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(USS|PCU)-\w{1,}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="apartadoJ">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(E|P)\d{4}[A-Z]{2}#{0,1}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="apartadoK">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(www.){0,1}[A-Za-z\d]{1,}.[a-z]{1,3}/{0,1}[\D\d]{0,}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="patrones">
+        <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="apartadoA" type="apartadoA"/>
+                <xs:element name="apartadoB" type="apartadoB"/>
+                <xs:element name="apartadoC" type="apartadoC"/>
+                <xs:element name="apartadoD" type="apartadoD"/>
+                <xs:element name="apartadoE" type="apartadoE"/>
+                <xs:element name="apartadoF" type="apartadoF"/>
+                <xs:element name="apartadoG" type="apartadoG"/>
+                <xs:element name="apartadoH" type="apartadoH"/>
+                <xs:element name="apartadoI" type="apartadoI"/>
+                <xs:element name="apartadoJ" type="apartadoJ"/>
+                <xs:element name="apartadoK" type="apartadoK"/> 
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
