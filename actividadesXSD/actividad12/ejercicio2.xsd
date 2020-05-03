@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType name="tipo-persona">
+        <xs:sequence>
+            <xs:element name="nombre"/>
+            <xs:element name="documento" type="tipo-documento"/>
+            <xs:element name="estado_civil" type="tipo-estado-civil"/>
+        </xs:sequence>
+        <xs:attribute name="codigo" type="xs:ID" use="required"/>
+        <xs:attribute name="f_nacimiento" type="xs:date" use="optional"/>
+    </xs:complexType>
+
+    <xs:simpleType name="tipo-tipo">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="dni"/>
+            <xs:enumeration value="pasaporte"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipo-valor">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="soltero"/>
+            <xs:enumeration value="casado"/>
+            <xs:enumeration value="divorciado"/>
+            <xs:enumeration value="viudo"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipo-dni">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{8}[A-Z]"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="tipo-documento">
+        <xs:simpleContent>
+            <xs:extension base="tipo-dni">
+                <xs:attribute name="tipo" type="tipo-tipo"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="tipo-estado-civil">
+        <xs:attribute name="valor" type="tipo-valor"/>
+    </xs:complexType>
+
+    <xs:element name="persona" type="tipo-persona"/>
+</xs:schema>
